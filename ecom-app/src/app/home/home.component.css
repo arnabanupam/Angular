@@ -1,0 +1,56 @@
+.product-header-img{
+    object-fit: contain;
+    height: 400px;
+    width: 100%;
+}
+.product-list-wrapper{
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.product-item{
+    margin-bottom: 40px;
+    border: 1px solid #cecdcd;
+    margin-right: 25px;
+}
+.product-item img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+}
+.product-item .product-details{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+}
+.product-item .name-head{
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+.product-item h6{
+    text-align: center;
+}
+.product-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Initially hide the carousel control buttons */
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+    opacity: 0;
+    pointer-events: none; /* Disable pointer events to prevent interaction */
+    transition: opacity 0.3s ease; /* Optional: add a smooth transition */
+}
+
+/* Show the carousel control buttons when they are directly hovered over */
+.custom-carousel .carousel-control-prev:hover,
+.custom-carousel .carousel-control-next:hover {
+    opacity: 1;
+    pointer-events: auto; /* Enable pointer events when hovered over */
+}

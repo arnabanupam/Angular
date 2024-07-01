@@ -1,0 +1,11 @@
+.example-full-width {
+    margin-left: 8px;
+    display: inline;
+    flex-shrink: 0;
+  }
+  
+
+  .icon-spacer{
+    padding: auto;
+    margin-right: 5px;
+  }

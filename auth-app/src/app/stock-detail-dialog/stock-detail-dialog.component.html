@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Stock Details</h1>
+    <div mat-dialog-content>
+        <p>Name: {{data.name}}</p>
+        <p>Price: {{data.price}}</p>
+        <p>Currency: {{data.currency}}</p>
+        <p>Previous Close: {{data.previous_close}}</p>
+        <p>Timezone: {{data.timezone}}</p>
+    </div>
+    <div mat-dialog-actions>
+      <button mat-button [mat-dialog-close]="true">Close</button>
+    </div>

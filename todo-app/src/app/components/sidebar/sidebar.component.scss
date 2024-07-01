@@ -1,0 +1,26 @@
+// .fixed-sidebar {
+//     @extend .fixed;
+//     @extend .top-16;
+//     @extend .w-80;
+//     @extend .shadow-lg;
+//     @extend .rounded;
+//     @extend .border;
+//     @extend .border-gray-300;
+//     height: calc(100vh - 4rem);
+  
+//     ul {
+//       li {
+//         @extend .p-4;
+//         @extend .cursor-pointer;
+//         @extend .text-blue-600;
+  
+//         &[routerLinkActive] {
+//           @extend .bg-blue-100;
+//           @extend .border-4;
+//           @extend .border-blue-500;
+//           @extend .font-bold;
+//         }
+//       }
+//     }
+//   }
+  

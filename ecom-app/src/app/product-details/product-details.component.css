@@ -1,0 +1,89 @@
+.product-image{
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+}
+.product-color{
+    border:3px solid #0a0101;
+    width: 40px;
+    height: 40px;
+    border-radius:  50px; ;
+}
+.product-details{
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+h1,h5,h6{
+    margin-bottom: 20px;
+}
+.quantity-group{
+    margin-top: 20px;
+}
+.quantity-group button{
+    padding: 10px;
+}
+.quantity-group input{
+    padding: 10px;
+}
+.details-button {
+    background-color: #007BFF;  
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .details-button:hover {
+    background-color: #0056b3; 
+    transform: translateY(-2px); 
+  }
+  
+  .details-button:focus {
+    outline: none;  
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.6), 0 0 0 4px #0056b3; 
+  }
+  
+  .details-button:active {
+    background-color: #004080; 
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); 
+    transform: translateY(1px); 
+  }
+  
+  .rating-box {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0; /* Default background color */
+  }
+  
+  .rating {
+    font-size: 20px;
+    font-weight: bold;
+    color: green; /* Default color for rating */
+  }
+  
+  .ratings {
+    font-size: 14px;
+  }
+  
+  /* Styles based on finalRating */
+  .rating-box.low-rating .rating {
+    color: red;
+  }
+  
+  .rating-box.medium-rating .rating {
+    color: orange;
+  }
+  
+  .rating-box.high-rating .rating {
+    color: green;
+  }
+  
+  
+  

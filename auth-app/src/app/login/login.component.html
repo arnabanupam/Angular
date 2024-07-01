@@ -1,0 +1,32 @@
+<div class="register-card-container">
+    <mat-card class="register-card">
+
+        <mat-card-header class="mat-card-header">
+            <mat-card-title class="title-card">Login</mat-card-title>
+        </mat-card-header>
+
+        <form class="register-form" [formGroup]="loginform" >
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Username</mat-label>
+                <input formControlName="username" matInput placeholder="shashi14">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Enter your password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" name="password" formControlName="password">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+
+            <div>
+                <button mat-raised-button type="submit" class="register-button" (click)="onLogin()"> Login</button>
+                <span class="icon-spacer"></span>
+                <a routerLink="/register" mat-raised-button color="accent">Not a User? Register Here!</a>
+            </div>
+
+        </form>
+    </mat-card>
+</div>

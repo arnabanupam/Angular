@@ -1,0 +1,8 @@
+<h1 mat-dialog-title>Give Your Rating</h1>
+<div mat-dialog-content>
+<ngb-rating [max]="5" [formControl]="ratings"></ngb-rating>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button color="primary" (click)="saveRatings()">Save</button>
+    <button mat-raised-button color="warn" (click)="closepopup()">Close</button>
+</div>

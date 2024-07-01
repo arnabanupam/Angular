@@ -1,0 +1,17 @@
+<div class="row profile-item" *ngFor="let user of userData">
+    <div class="col-sm-3">
+        <img src="{{user.image}}" style="cursor: pointer; max-width: 200px; max-height: 200px;">
+        <!-- <button type="button" class="btn btn-primary" (click)="updateProfilePhoto()">Update Photo</button> -->
+        <app-update-photo-popup></app-update-photo-popup>
+        
+        <div *ngIf="previewUrl">
+        <img [src]="previewUrl" style="max-width: 200px; max-height: 200px;">
+        </div>
+    </div>
+    <div class="col-sm-8 details" >
+        <h6 style="cursor: pointer;">{{user.name}}</h6>
+        <p><b>Email:{{user.email}}</b></p>
+        <p><span>Password:{{user.password}}</span></p>
+    </div>
+</div>
+<app-chatbot></app-chatbot>

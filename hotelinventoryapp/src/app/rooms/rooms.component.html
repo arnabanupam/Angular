@@ -1,0 +1,11 @@
+
+<h2> Welcome to {{hotelName}}</h2>
+<div [hidden]="hideRooms">
+    Number of Rooms Available :
+    <div [innerText]="numberOfRooms"> </div>
+</div>
+
+<!-- document.getElementById('numberOfRooms').InnerText = numberOfRooms;-->
+
+<button (click)="toggle()"> Toggle </button>
+

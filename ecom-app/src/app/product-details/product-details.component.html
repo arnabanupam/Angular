@@ -1,0 +1,32 @@
+<div class="row product-details" *ngIf="productData">
+    <div class="col-sm-6">
+        <img class="product-image" src="{{productData.image}}">
+    </div>
+    <div class="col-sm-6">
+        <div class="details">
+            <h1>{{productData.name}}</h1>
+            <div class="rating-box">
+                <span class="rating">{{ productData.averageratings }}★</span>
+                <span class="ratings"> {{ productData.totalratings }} Ratings</span>
+              </div>
+                           
+            
+            <h3>Price:₹{{productData.price}}</h3>
+            <div>
+                Color:
+                <h5 [style.backgroundColor]="productData.color" class="product-color"></h5>
+            </div>
+            <h6>{{productData.category}}</h6>
+            <h6>{{productData.description}}</h6>
+            <button *ngIf="!removeCart"  class="details-button" (click)="AddToCart()">Add to Cart</button>
+            <button *ngIf="removeCart"  class="details-button" (click)="removeFromCart(productData.id)">Remove From Cart</button>
+            <button class="details-button" (click)="OpenRatings()">Rate this Product</button>
+            <div class="quantity-group">
+                <button  (click)="handleQuantity('min')" [disabled]="productQuantity <= 1">-</button>
+                <input type="text" value="{{productQuantity}}">
+                <button (click)="handleQuantity('plus')" [disabled]="productQuantity >= 5">+</button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-chatbot></app-chatbot>

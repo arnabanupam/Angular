@@ -1,0 +1,19 @@
+<div class="lg-w:3/12 mt-1 p-5 shadow-lg mx-auto">
+    <h2 class="text-3xl text-center font-bold py-1"> Login </h2>
+    <div  class="flex flex-col mt-4 mb-1">
+        <input formControlName = "email" class="p-2 border border-grey-300 rounded" type="text" placeholder="Email">
+        <span *ngIf="LoginForm.hasError('required', 'email') && LoginForm.controls['email'].dirty"
+         class="text-red-500"> * EmailID is Required </span>
+         <span *ngIf="LoginForm.hasError('email', 'email')"
+         class="text-red-500"> * EmailID is Invalid </span> 
+    </div>
+    <div class="flex flex-col mt-4 mb-1">
+        <input formControlName = "password" class="p-2 border border-grey-300 rounded" type="password" placeholder="Password">
+        <span *ngIf="LoginForm.hasError('required', 'password') && LoginForm.controls['password'].dirty"
+         class="text-red-500"> * Password is Required </span>
+    </div>
+    <button (click)="login()" class="bg-indigo-500 p-2 rounded mt-3 text-white">Submit</button>
+    <div  class="flex justify-center mt-5">
+        <span> New User?</span> <a routerLink="/register" class="text-indigo-600 ml-2 cursor-pointer"> Register Here </a>
+    </div>
+</div>

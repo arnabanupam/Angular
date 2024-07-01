@@ -1,0 +1,37 @@
+<h1 mat-dialog-title>Add/Edit User</h1>
+<div mat-dialog-content>
+    <form [formGroup]="userForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Full Name</mat-label>
+            <input formControlName="userName" matInput placeholder="Shashi Tharur">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input formControlName="email" matInput placeholder="abc@dummy.com">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Gender</mat-label>
+            <mat-select formControlName="gender" placeholder="Male/Female">
+                <mat-option value="Male">Male</mat-option>
+                <mat-option value="Female">Female</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Date Of Birth</mat-label>
+            <input formControlName="date" matInput [matDatepicker]="picker" [max]="todayDate">
+            <mat-hint>MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+        </mat-form-field>
+        <!-- <mat-form-field appearance="outline">
+            <mat-label>Time Of Birth</mat-label>
+            <input placeholder="HH:MM" formControlName="time" [ngxTimepicker]="timepicker">
+            <ngx-material-timepicker #picker></ngx-material-timepicker>
+          </mat-form-field> -->
+    </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <!-- <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addUser()">{{actionBtn}}</button> -->
+
+</div>

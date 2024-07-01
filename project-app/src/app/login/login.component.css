@@ -1,0 +1,52 @@
+.login-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed for the desired height */
+  }
+
+  .icon-spacer{
+    padding: auto;
+    margin-right: 5px;
+  }
+  .example-full-width {
+    margin-left: 8px;
+    display: inline;
+    flex-shrink: 0;
+  }
+.login-card {
+    background-color: #c2bebe; /* Background color of the card */
+    border-radius: 8px; /* Border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 20px; /* Padding inside the card */
+    margin: 20px; /* Margin around the card */
+    max-width: 600px; /* Maximum width of the card */
+    height: 400px;
+    width: 80%; /* Ensure card spans entire width */
+  }
+  
+  .title-card {
+    font-size: 24px; /* Font size of the title */
+    color: #333; /* Color of the title text */
+    margin-bottom: 10px; /* Bottom margin of the title */
+  }
+  
+  .mat-card-actions {
+    display: flex; /* Arrange actions horizontally */
+    justify-content: flex-end; /* Align actions to the right */
+  }
+  
+  .login-button{
+    margin-left: 10px; /* Add space between buttons */
+    background-color: #f6faf5; /* Button background color */
+    color: #080101; /* Button text color */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Button border radius */
+    padding: 10px 20px; /* Button padding */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+  
+  .login-button:hover{
+    background-color: #0056b3; /* Darker background color on hover */
+  }

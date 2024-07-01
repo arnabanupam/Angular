@@ -1,0 +1,29 @@
+<div class="chatbot-container">
+  <div class="chat-header" (click)="toggleChat()">
+    <mat-icon>face</mat-icon> Chat With Us
+    <button *ngIf="isOpen" (click)="toggleChat()">X</button>
+  </div>
+  <div class="chat-messages" #chatContainer *ngIf="isOpen">
+    <div class="buttons">
+
+      <button class="chat-button">
+        <span class="button-text" (click)="submitSearch('Mobile')" >Mobiles</span>
+        <span class="new-star">NEW</span> 
+      </button>      
+
+      <button class="chat-button" (click)="handleButtonClick('All Categories')" >All Categories</button>
+      <div>
+        <div *ngFor="let category of categories">
+          <!-- <button class="chat-button" (click)="handleCategoryClick("/searchByCategory/Car")">{{ "Car" }}</button> -->
+        </div>
+      </div>
+    </div>
+    <div *ngFor="let message of messages">
+      <div class="message" [ngClass]="{'user': message.user, 'bot': !message.user}">
+        {{ message.text }}
+        <span class="timestamp">{{ message.timestamp | date: 'mediumTime' }}</span>
+      </div>
+    </div>
+  </div>
+  <input type="text" [(ngModel)]="inputMessage" *ngIf="isOpen" (keyup.enter)="sendMessage()" placeholder="Say Hi..." />
+</div>

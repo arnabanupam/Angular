@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: sans-serif;
+}
+.container{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.common-form {
+    max-width: 400px; /* Adjust as needed */
+    margin: 0 auto; /* Center the form */
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff; /* Bootstrap's primary color */
+    color: white;
+    cursor: pointer;
+}
+
+.form-button:hover {
+    background-color: #0056b3; /* Darken the color on hover */
+}
+
+.carousel-caption{
+    background-color: rgb(179, 192, 202);
+    border-radius: 5px;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: black;
+    border-radius: 5px;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

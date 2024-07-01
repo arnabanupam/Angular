@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+  <span>Stock Dashboard</span>
+  <span class="example-spacer"></span>
+  <a *ngIf="isAdminUser" routerLink="/user" mat-raised-button color="primary">Users</a>
+  <span class="icon-spacer"></span>
+  <a routerLink="/wishlist" mat-raised-button color="primary">WishList</a>
+  <span class="icon-spacer"></span>
+  <button routerLink="/login" mat-raised-button color="warn">Logout</button>
+</mat-toolbar>
+
+<div class="row">
+  <div class="col">
+    <ag-grid-angular class="ag-theme-quartz" style="height: 500px;width: 100%"
+      [rowData]="rowData"
+      [columnDefs]="columnDefs"
+      [defaultColDef]="defaultColDef" 
+      [pagination]="true" 
+      [paginationPageSize]="10"
+      [paginationPageSizeSelector]=[4,8,12,16]
+      [suppressRowClickSelection]="true" 
+      [animateRows]="true"
+      >
+    </ag-grid-angular>
+  </div>
+</div>

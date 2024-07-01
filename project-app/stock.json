@@ -1,0 +1,52 @@
+{
+    "stockList": [
+      {
+        "name": "IBM",
+        "type": "stock",
+        "price": "516",
+        "previous_close": "500",
+        "currency": "INR",
+        "timezone": "IST"
+      } ,
+      {
+        "name": "Reliance",
+        "type": "stock",
+        "price": "1370.24",
+        "previous_close": "1498.43",
+        "currency": "INR",
+        "timezone": "IST"
+      },
+      {
+        "name": "TATA Steel",
+        "type": "stock",
+        "price": "120.33",
+        "previous_close": "108.45",
+        "currency": "INR",
+        "timezone": "IST"
+      },
+      {
+        "name": "Google",
+        "type": "stock",
+        "price": "983.12",
+        "previous_close": "877.22",
+        "currency": "INR",
+        "timezone": "IST"
+      },
+      {
+        "name": "Amazon",
+        "type": "stock",
+        "price": "2675.98",
+        "previous_close": "2436.35",
+        "currency": "INR",
+        "timezone": "IST"
+      },
+      {
+        "name": "HDFC",
+        "type": "stock",
+        "price": "1690.21",
+        "previous_close": "2498.43",
+        "currency": "INR",
+        "timezone": "IST"
+      } 
+    ]
+  }

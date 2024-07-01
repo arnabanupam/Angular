@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+	<span>Stock Info Dashboard</span>
+	<span class="example-spacer"></span>
+	<button mat-raised-button color="basic" routerLink="/dashboard">Users</button>
+	<span class="icon-spacer"></span>
+	<button mat-raised-button color="warn" routerLink="/login">Logout</button>
+  </mat-toolbar>
+  
+<div class="row">
+<div class="col">
+<ag-grid-angular class="ag-theme-quartz" style="height: 500px;width: 100%"
+[rowData]="rowData"
+[columnDefs]="columnDefs"
+[defaultColDef] = "defaultColDef"
+[pagination]="true"
+[paginationPageSize]="10"
+[suppressRowClickSelection]="true"
+[animateRows]="true"
+>
+</ag-grid-angular>
+</div>
+</div>

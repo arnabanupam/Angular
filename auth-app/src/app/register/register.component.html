@@ -1,0 +1,59 @@
+<div class="register-card-container">
+    <mat-card class="register-card">
+
+        <mat-card-header class="mat-card-header">
+            <mat-card-title class="title-card">User Registration</mat-card-title>
+        </mat-card-header>
+
+        <form class="register-form" [formGroup]="registerform" >
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Username</mat-label>
+                <input formControlName="id" matInput placeholder="shashi14">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input formControlName="name" matInput placeholder="Shashi Tharur">
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Gender</mat-label>
+                <mat-select formControlName="gender" placeholder="Male/Female">
+                    <mat-option value="Male">Male</mat-option>
+                    <mat-option value="Female">Female</mat-option>
+                </mat-select>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Date Of Birth</mat-label>
+                <input formControlName="date" matInput [matDatepicker]="picker" [max]="todayDate">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label class="email-label">Enter your email</mat-label>
+                <input matInput placeholder="pat@example.com" formControlName="email">
+                <mat-error>invalid email</mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="example-full-width">
+                <mat-label>Enter your password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" name="password" formControlName="password">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+
+            <div>
+                <button mat-raised-button type="submit" class="register-button" (click)="onRegister()"> Register</button>
+                <span class="icon-spacer"></span>
+                <a routerLink="/login" mat-raised-button color="accent">Back to Login</a>
+            </div>
+
+        </form>
+    </mat-card>
+</div>

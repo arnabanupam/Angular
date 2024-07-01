@@ -1,0 +1,38 @@
+.signup-header{
+    text-align: center;
+    color: #007bff;
+}
+
+.auth-toggle-link {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #007BFF; 
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-toggle-link:hover, .auth-toggle-link:focus {
+    background-color: #0056b3; 
+    color: #FFF;
+    text-decoration: none; 
+    cursor: pointer;
+}
+
+.auth-error {
+    color: #721c24; /* Bootstrap's danger color */
+    background-color: #f8d7da; /* Bootstrap's light red color */
+    padding: 10px;
+    border: 1px solid #f5c6cb; /* Bootstrap's red border */
+    border-radius: 4px;
+    display: inline-block; /* Makes the box only as wide as the content */
+    text-align: center; /* Centers the text inside the box */
+}
+
+
+

@@ -1,0 +1,52 @@
+.product-list {
+    margin: 20px auto;
+    max-width: 800px; /* Adjust to your preference */
+}
+
+.product-list h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.product-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-list th, .product-list td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.product-list th {
+    background-color: #f2f2f2;
+}
+
+.product-list tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.product-list tbody tr:hover {
+    background-color: #e9e9e9;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+/* Style for delete icon */
+.delete-icon {
+    font-size: 15px; /* Adjust size as needed */
+    color: red; /* Adjust color as needed */
+    cursor: pointer;
+    
+}
+
+/* Style for update icon */
+.update-icon {
+    font-size: 15px; /* Adjust size as needed */
+    color: green; /* Adjust color as needed */
+    cursor: pointer;
+    margin-left: 20px; 
+}
+

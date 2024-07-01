@@ -1,0 +1,17 @@
+.add-product{
+    text-align: center;
+}
+
+.add-product-header{
+    text-align: center;
+    color: #007bff;
+}
+.product-message{
+        color: #198503; /* Bootstrap's danger color */
+        background-color: #e3f823; /* Bootstrap's light red color */
+        padding: 10px;
+        border: 1px solid #fcf8f8; /* Bootstrap's red border */
+        border-radius: 4px;
+        display: inline-block; /* Makes the box only as wide as the content */
+        text-align: center; /* Centers the text inside the box */
+}

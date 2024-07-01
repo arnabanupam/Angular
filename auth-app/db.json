@@ -1,0 +1,84 @@
+{
+  "list": [
+    {
+      "id": "arnab",
+      "name": "arnab",
+      "password": "1234",
+      "email": "arnab@gmail.com",
+      "gender": "Male",
+      "date": "2000-12-31T18:30:00.000Z",
+      "role": "broker",
+      "isactive": true
+    },
+    {
+      "id": "shashi14",
+      "name": "shashi tharur",
+      "password": "1234",
+      "email": "tharur@dummy.com",
+      "gender": "Male",
+      "date": "2024-03-31T18:30:00.000Z",
+      "role": "investor",
+      "isactive": true
+    },
+    {
+      "id": "neha99",
+      "name": "neha",
+      "password": "1234",
+      "email": "neha@gmail.com",
+      "gender": "Female",
+      "date": "2001-01-02T18:30:00.000Z",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "id": "kunal",
+      "name": "kunal",
+      "password": "1234",
+      "email": "kunal@gmail.com",
+      "gender": "Male",
+      "date": "2001-02-28T18:30:00.000Z",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "id": "admin",
+      "name": "admin",
+      "password": "1234",
+      "email": "admin@gmail.com",
+      "gender": "Male",
+      "date": "1999-08-13T18:30:00.000Z",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "newton",
+      "name": "newton",
+      "password": "1234",
+      "email": "newton@gmail.com",
+      "gender": "Male",
+      "date": "2000-12-31T18:30:00.000Z",
+      "role": "",
+      "isactive": false
+    },
+    {
+      "id": "pascal",
+      "name": "pascal",
+      "password": "1234",
+      "email": "pascal@dummy.com",
+      "gender": "Male",
+      "date": "2000-12-31T18:30:00.000Z",
+      "role": "investor",
+      "isactive": true
+    }
+  ],
+  "role": [
+    {
+      "code": "broker",
+      "name": "broker"
+    },
+    {
+      "code": "investor",
+      "name": "investor"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<app-sidebar [isExpanded]="sidebarExpanded"></app-sidebar>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Market App</title>
+</head>
+<body>
+
+  <header>
+    <h1>Stock Market App</h1>
+  </header>
+
+  <main>
+    <input type="search" id="searchInput" oninput="getStockData(this.value)" placeholder="Search...">
+    
+    <article id="stockCard" style="display: none;">
+      <header>
+        <h2 id="companyName"></h2>
+      </header>
+      <section>
+        <p id="symbol"></p>
+        <p id="latestPrice"></p>
+      </section>
+    </article>
+  </main>
+
+</body>
+</html>

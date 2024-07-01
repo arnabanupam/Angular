@@ -1,0 +1,33 @@
+<div class="login-card-container">
+    <mat-card class="login-card">
+        <mat-card-header class="mat-card-header">
+            <mat-card-title class="title-card">Login</mat-card-title>
+        </mat-card-header>
+
+        <form  class="login-form">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Enter your email</mat-label>
+                    <input matInput placeholder="pat@example.com" [formControl]="email" required>
+                    @if (email.invalid) {
+                    <mat-error>{{getErrorMessage()}}</mat-error>
+                    }
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <mat-label>Enter your password</mat-label>
+                    <input matInput [type]="hide ? 'password' : 'text'" >
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                        [attr.aria-pressed]="hide">
+                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                </mat-form-field>
+    
+                <mat-card-actions>
+                    <button (click)="login()" mat-button routerLink="/grid" class="login-button"> Login</button>
+                    <span class="icon-spacer"></span>
+                    <a routerLink="/register" mat-raised-button color="accent">Not a User? Register</a>
+                </mat-card-actions>
+            
+        </form>
+    </mat-card>
+</div>

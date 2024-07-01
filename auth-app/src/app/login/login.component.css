@@ -1,0 +1,38 @@
+.example-full-width {
+    margin-left: 8px;
+    display: inline;
+    flex-shrink: 0;
+  }
+  .register-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  } 
+
+  .register-card {
+    background-color: #ffffff; /* Background color of the card */
+    border-radius: 8px; /* Border radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    padding: 20px; /* Padding inside the card */
+    margin: 20px; /* Margin around the card */
+    max-width: 600px; /* Maximum width of the card */
+    height: 600px;
+    width: 80%; /* Ensure card spans entire width */
+  }
+
+  .mat-card-actions {
+    display: flex; /* Arrange actions horizontally */
+    justify-content: flex-end; /* Align actions to the right */
+  }
+
+  .register-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed for the desired height */
+  }
+
+  .icon-spacer{
+    padding: auto;
+    margin-right: 5px;
+  }

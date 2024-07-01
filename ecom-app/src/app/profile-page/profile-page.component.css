@@ -1,0 +1,36 @@
+.profile-item {
+    margin: 25px auto;
+    width: 800px;
+    border-top: 1px solid #ddd;
+    padding: 10px;
+}
+.profile-item img{
+    margin-bottom: 20px;
+    width: 100%;
+    object-fit: contain;
+    height: 150px;
+}
+.profile-item h6{
+    font-size: 24px;
+    color: blueviolet;
+
+}
+.profile-item p{
+    margin: 5px;
+}
+.profile-item span{
+    margin-right: 10px;
+}
+
+.update-photo-button {
+    padding: 10px 20px; /* Add padding to the button */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Add cursor pointer */
+}
+
+.update-photo-button:hover {
+    background-color: #45a049; /* Darker green when hovering */
+}
